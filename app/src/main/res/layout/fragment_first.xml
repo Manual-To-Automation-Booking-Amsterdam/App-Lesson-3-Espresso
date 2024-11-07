@@ -1,0 +1,73 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="387dp"
+            android:layout_height="104dp"
+            android:layout_marginStart="11dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="60dp"
+            android:adjustViewBounds="false"
+            android:cropToPadding="true"
+            android:src="@drawable/sa_training_app" />
+
+        <Button
+            android:id="@+id/alertButton"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginStart="29dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="18dp"
+            android:text="Alert" />
+
+        <Button
+            android:id="@+id/textFieldButton"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginStart="29dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="18dp"
+            android:text="Text Fields" />
+
+        <Button
+            android:id="@+id/formButton"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginStart="29dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="18dp"
+            android:text="Form" />
+
+        <Button
+            android:id="@+id/datePickerButton"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginStart="29dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="18dp"
+            android:text="Date Picker" />
+
+        <Button
+            android:id="@+id/switchesButton"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginStart="29dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="18dp"
+            android:text="Switches" />
+
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginStart="29dp"
+            android:layout_marginEnd="16dp"
+            android:text="Login" />
+
+</LinearLayout>

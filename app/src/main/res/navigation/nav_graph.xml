@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/FirstFragment">
+
+    <fragment
+        android:id="@+id/FirstFragment"
+        android:name="com.example.lesson2_basictest.FirstFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_first">
+
+        <action
+            android:id="@+id/action_FirstFragment_to_SecondFragment"
+            app:destination="@id/SecondFragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_TextFieldPage"
+            app:destination="@id/TextFieldPage" />
+        <action
+            android:id="@+id/action_FirstFragment_to_FormPage"
+            app:destination="@id/FormPage" />
+        <action
+            android:id="@+id/action_FirstFragment_to_SwitchesPage"
+            app:destination="@id/SwitchesPage" />
+        <action
+            android:id="@+id/action_FirstFragment_to_DatePickerPage"
+            app:destination="@id/DatePickerPage" />
+        <action
+            android:id="@+id/action_FirstFragment_to_LoginPage"
+            app:destination="@id/LoginPage" />
+    </fragment>
+    <fragment
+        android:id="@+id/SecondFragment"
+        android:name="com.example.lesson2_basictest.SecondFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_second">
+
+        <action
+            android:id="@+id/action_textFieldPage_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/TextFieldPage"
+        android:name="com.example.lesson2_basictest.TextFieldPage"
+        android:label="Text Field Page"
+        tools:layout="@layout/text_field_page">
+
+        <action
+            android:id="@+id/action_textFieldPage_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/FormPage"
+        android:name="com.example.lesson2_basictest.FormPage"
+        android:label="Form Page"
+        tools:layout="@layout/form_page">
+
+        <action
+            android:id="@+id/action_formPage_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/DatePickerPage"
+        android:name="com.example.lesson2_basictest.DatePickerPage"
+        android:label="Date Picker Page"
+        tools:layout="@layout/date_picker">
+        <action
+            android:id="@+id/action_DatePickerPage_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/SwitchesPage"
+        android:name="com.example.lesson2_basictest.SwitchesPage"
+        android:label="Switches Page"
+        tools:layout="@layout/switch_page">
+
+        <action
+            android:id="@+id/action_switchPage_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/LoginPage"
+        android:name="com.example.lesson2_basictest.LoginPage"
+        android:label="Login Page"
+        tools:layout="@layout/login_page">
+        <action
+            android:id="@+id/action_LoginPage_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+</navigation>

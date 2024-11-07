@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/formSubmitButton"
+        android:layout_width="178dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="117dp"
+        android:layout_marginBottom="40dp"
+        android:contentDescription="@string/formSubmitButtonContentDesc"
+        android:text="@string/formSubmitButtonText"
+        app:layout_constraintBottom_toTopOf="@+id/formDetailsLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailAddressFormField" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="46dp"
+        android:contentDescription="@string/emailAddressLabelContentDesc"
+        android:text="@string/emailAddressLabelText"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/formSubmitButton"
+        app:layout_constraintEnd_toStartOf="@+id/emailAddressFormField"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/lastNameFormField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="12dp"
+        android:contentDescription="@string/lastNameFieldContentDesc"
+        android:ems="10"
+        android:hint="@string/lastNameFormFieldText"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColorHint="#757575"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstNameFormField" />
+
+    <EditText
+        android:id="@+id/firstNameFormField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="12dp"
+        android:autofillHints=""
+        android:contentDescription="@string/firstNameFieldContentDesc"
+        android:ems="10"
+        android:hint="@string/firstNameFieldText"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColorHint="#757575"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <EditText
+        android:id="@+id/emailAddressFormField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="12dp"
+        android:contentDescription="@string/enterEmailFieldContentDesc"
+        android:ems="10"
+        android:hint="@string/enterEmailFormFieldText"
+        android:importantForAutofill="no"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        android:textColorHint="#757575"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lastNameFormField"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/firstNameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="66dp"
+        android:contentDescription="@string/firstNameLabelContentDesc"
+        android:text="@string/firstNameLabelText"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/firstNameFormField"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="67dp"
+        android:contentDescription="@string/lastNameLabelContentDesc"
+        android:text="@string/lastNameLabelText"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/lastNameFormField"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstNameLabel" />
+
+    <Button
+        android:id="@+id/formGoBackButton"
+        android:layout_width="178dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="117dp"
+        android:layout_marginTop="61dp"
+        android:layout_marginEnd="117dp"
+        android:layout_marginBottom="58dp"
+        android:contentDescription="@string/formGoBackButtonContentDesc"
+        android:text="@string/formGoBackButtonText"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/formEmailLabel" />
+
+    <TextView
+        android:id="@+id/formDetailsLabel"
+        android:layout_width="370dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="80dp"
+        android:contentDescription="@string/enteredTextLabelContentDesc"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/formNameLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="Entered Fields" />
+
+    <TextView
+        android:id="@+id/formEmailLabel"
+        android:layout_width="366dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="23dp"
+        android:contentDescription="entered-email-label-acc-id"
+        android:text="Email Address: "
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/formNameLabel" />
+
+    <TextView
+        android:id="@+id/formNameLabel"
+        android:layout_width="366dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="10dp"
+        android:contentDescription="entered-name-label-acc-id"
+        android:text="Name: "
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/formEmailLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/formDetailsLabel" />
+</androidx.constraintlayout.widget.ConstraintLayout>
